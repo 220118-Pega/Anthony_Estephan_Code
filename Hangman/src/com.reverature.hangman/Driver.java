@@ -1,3 +1,5 @@
+
+
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,6 +21,8 @@ public class Driver {
         String mysteryWord = scanner.nextLine();
 
         System.out.println("The word is: " + mysteryWord);
+        System.out.print("\033[H\033[2J");  
+        System.out.flush();
 
         //Query player for letter
         System.out.println("Guess a letter: ");
@@ -75,8 +79,7 @@ public class Driver {
         //Player ran out of guesses
         if(chances == 0){ System.out.println("Better luck next time!!!"); }
         
-        
-        
+    
         /*
         Game game = new Game();
         System.out.println("Hello World !!" + game.getLetter());
