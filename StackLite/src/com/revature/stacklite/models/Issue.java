@@ -85,6 +85,10 @@ public class Issue {
         this.title = title;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
         // TODO Auto-generated method stub
