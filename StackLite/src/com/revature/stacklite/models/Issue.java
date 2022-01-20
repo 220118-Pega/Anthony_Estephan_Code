@@ -1,5 +1,6 @@
 package com.revature.stacklite.models;
 
+import java.util.List;
 import java.util.Set;
 
 /*
@@ -26,6 +27,7 @@ public class Issue {
     private String title;
     private String description;
     private int id;
+    private List<Solution> solutions;
 
 
     /*
@@ -61,6 +63,10 @@ public class Issue {
 
     }
 
+    public Issue(String title, String description, int id, List<Solution> solutions) {
+        this(title, description, id);
+        this.solutions = solutions;
+    }
     /*
      *  METHODS
      */
@@ -87,6 +93,14 @@ public class Issue {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public List<Solution> getSolutions() {
+        return solutions;
+    }
+
+    public void setSolutions(List<Solution> solutions) {
+        this.solutions = solutions;
     }
 
     @Override
