@@ -34,6 +34,8 @@ public class InMemoryRepo implements Archive {
     public void addIssue(Issue issue) {
         
         issue.setId(latestId);
+        System.out.println("\n" + issue.toString() + "\n");
+
         latestId++;
         listOfIssue.add(issue);
         

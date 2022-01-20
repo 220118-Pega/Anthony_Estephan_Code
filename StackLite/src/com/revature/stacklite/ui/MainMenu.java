@@ -77,7 +77,6 @@ public class MainMenu {
         String description = myscanner.nextLine();
 
         Issue newIssue = new Issue(title, description);
-        System.out.println("\n" + newIssue.toString() + "\n");
 
         issueManager.addIssue(newIssue);
     }
